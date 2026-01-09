@@ -1,0 +1,69 @@
+public classpublic class StudentGradeCalculator {
+    public static void main(String[] args) {
+        String[] subjectNames = {"Maths", "Science", "English"};
+        int[] marks = {90, 85, 95};
+
+        int totalMarks = 0;
+        for (int mark : marks) {
+            totalMarks += mark;
+        }
+
+        double averagePercentage = (double) totalMarks / subjectNames.length;
+
+        String grade;
+        if (averagePercentage >= 90) {
+            grade = "A";
+        } else if (averagePercentage >= 80) {
+            grade = "B";
+        } else if (averagePercentage >= 70) {
+            grade = "C";
+        } else if (averagePercentage >= 60) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        System.out.println("Results:");
+        for (int i = 0; i < subjectNames.length; i++) {
+            System.out.println(subjectNames[i] + ": " + marks[i]);
+        }
+
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Average Percentage: " + averagePercentage + "%");
+        System.out.println("Grade: " + grade);
+    }
+} {
+    public static void main(String[] args) {
+        String[] subjectNames = {"Maths", "Science", "English"};
+        int[] marks = {90, 85, 95};
+
+        int totalMarks = 0;
+        for (int mark : marks) {
+            totalMarks += mark;
+        }
+
+        double averagePercentage = (double) totalMarks / subjectNames.length;
+
+        String grade;
+        if (averagePercentage >= 90) {
+            grade = "A";
+        } else if (averagePercentage >= 80) {
+            grade = "B";
+        } else if (averagePercentage >= 70) {
+            grade = "C";
+        } else if (averagePercentage >= 60) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        System.out.println("Results:");
+        for (int i = 0; i < subjectNames.length; i++) {
+            System.out.println(subjectNames[i] + ": " + marks[i]);
+        }
+
+        System.out.println("Total Marks: " + totalMarks);
+        System.out.println("Average Percentage: " + averagePercentage + "%");
+        System.out.println("Grade: " + grade);
+    }
+}
